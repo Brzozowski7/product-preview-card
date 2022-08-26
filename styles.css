@@ -4,6 +4,8 @@
 }
 body{
     background-color: hsl(30, 38%, 92%);
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
 }
 .cardContainer{
     background-color: white;
@@ -19,10 +21,53 @@ body{
     overflow: hidden;
 }
 .imageContainer{
-    width:350px;
-    height:500px;
+    width:50%;
+    height:100%;
 }
 .imageContainer img{
     max-width: 100%;
     max-height: 100%;
+}
+.infoContainer{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    width:50%;
+    height:100%;
+    padding:2rem;
+}
+.infoContainer h1{
+    font-family: 'Fraunces', serif;
+}
+.infoContainer p,h4{
+    color:hsl(228, 12%, 48%)
+}
+.pricesContainer{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 30px;
+}
+.presentPrice{
+    color:hsl(158, 36%, 37%);
+}
+.previousPrice{
+    color:hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    align-self: center;
+}
+.addButton{
+    background-color:hsl(158, 36%, 37%);
+    color:white;
+    font-weight: 700;
+    height:2.5rem;
+    border:none;
+    border-radius:0.3rem;
+}
+.addButton img{
+    vertical-align: middle;
+}
+.addButton:hover{
+    cursor: pointer;
+    background-color:darkgreen;
 }

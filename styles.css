@@ -5,7 +5,6 @@
 body{
     background-color: hsl(30, 38%, 92%);
     font-size: 14px;
-    font-family: 'Montserrat', sans-serif;
 }
 .cardContainer{
     background-color: white;
@@ -21,13 +20,12 @@ body{
     overflow: hidden;
 }
 .imageContainer{
+    background: url(./images/image-product-desktop.jpg);
+    background-size: cover;
     width:50%;
     height:100%;
 }
-.imageContainer img{
-    max-width: 100%;
-    max-height: 100%;
-}
+
 .infoContainer{
     display:flex;
     flex-direction:column;
@@ -40,6 +38,7 @@ body{
     font-family: 'Fraunces', serif;
 }
 .infoContainer p,h4{
+    font-family: 'Montserrat', sans-serif;
     color:hsl(228, 12%, 48%)
 }
 .pricesContainer{
@@ -59,6 +58,7 @@ body{
 .addButton{
     background-color:hsl(158, 36%, 37%);
     color:white;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     height:2.5rem;
     border:none;
@@ -70,4 +70,22 @@ body{
 .addButton:hover{
     cursor: pointer;
     background-color:darkgreen;
+}
+
+@media screen and (max-width: 960px) {
+    .cardContainer{
+        margin:auto;
+        width:100vw;
+        height:95vh;
+        flex-direction: column;
+    }
+    .imageContainer{
+        background: url(./images/image-product-mobile.jpg);
+        background-size: cover;
+        width:100%;
+        height:60%;
+    }
+    .infoContainer{
+        width:100%;
+    }
 }

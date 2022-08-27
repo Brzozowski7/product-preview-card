@@ -5,6 +5,7 @@
 body{
     background-color: hsl(30, 38%, 92%);
     font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
 }
 .cardContainer{
     background-color: white;
@@ -33,13 +34,14 @@ body{
     width:50%;
     height:100%;
     padding:2rem;
+    color:hsl(228, 12%, 48%);
 }
 .infoContainer h1{
     font-family: 'Fraunces', serif;
+    color:black;
 }
-.infoContainer p,h4{
-    font-family: 'Montserrat', sans-serif;
-    color:hsl(228, 12%, 48%)
+.productType{
+    font-weight: 700;
 }
 .pricesContainer{
     display:flex;
@@ -49,25 +51,27 @@ body{
 }
 .presentPrice{
     color:hsl(158, 36%, 37%);
+    font-size: 1.8rem;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
 }
 .previousPrice{
     color:hsl(228, 12%, 48%);
     text-decoration: line-through;
     align-self: center;
 }
-.addButton{
+.addToCartButton{
     background-color:hsl(158, 36%, 37%);
     color:white;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     height:2.5rem;
     border:none;
     border-radius:0.3rem;
 }
-.addButton img{
+.addToCartButton img{
     vertical-align: middle;
 }
-.addButton:hover{
+.addToCartButton:hover{
     cursor: pointer;
     background-color:darkgreen;
 }

@@ -1,0 +1,114 @@
+:root {
+  --gray: hsl(228, 12%, 48%);
+  --green: hsl(158, 36%, 37%);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  background-color: hsl(30, 38%, 92%);
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+.cardContainer {
+  background-color: white;
+  width: 700px;
+  height: 500px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+.imageContainer {
+  width: 50%;
+  height: 100%;
+}
+.productImageMobile {
+  display: none;
+}
+.productImageDekstop {
+  display: block;
+  width: 100%;
+}
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 50%;
+  height: 100%;
+  padding: 2rem;
+  color: var(--gray);
+}
+.infoContainer h1 {
+  font-family: "Fraunces", serif;
+  color: black;
+}
+.productType {
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  font-weight: 700;
+}
+.pricesContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 30px;
+}
+.presentPrice {
+  color: var(--green);
+  font-size: 1.8rem;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  text-decoration: none;
+}
+.previousPrice {
+  color: var(--gray);
+  align-self: center;
+}
+.addToCartButton {
+  background-color: var(--green);
+  color: white;
+  font-weight: 700;
+  height: 2.5rem;
+  border: none;
+  border-radius: 0.3rem;
+}
+.addToCartButton img {
+  vertical-align: middle;
+}
+.addToCartButton:hover {
+  cursor: pointer;
+  background-color: hsl(134, 54%, 35%);
+}
+
+@media screen and (max-width: 960px) {
+  .cardContainer {
+    margin: auto;
+    width: 100vw;
+    height: 95vh;
+    flex-direction: column;
+  }
+  .imageContainer {
+    width: 100%;
+    height: 60%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .productImageMobile {
+    display: block;
+    height: 100%;
+    width:100%;
+  }
+  .productImageDekstop {
+    display: none;
+  }
+  .infoContainer {
+    width: 100%;
+  }
+}
